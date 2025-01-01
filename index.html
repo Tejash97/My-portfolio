@@ -1,4 +1,3 @@
-<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,26 +6,39 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
-        #skills {
-            margin-top: 50px;
-        }
+    #skills {
+        margin-top: 50px;
+    }
 
-        .skills-list {
-            list-style-type: none;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 0;
-        }
+    .skills-list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+    }
 
-        .skills-list li {
-            background-color: #f4f4f4;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    .skills-list li {
+        background-color: #f4f4f4;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* New styles for action buttons */
+    .actions.special {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .actions.special li {
+        width: 100%;
+        max-width: 200px;
+    }
+</style>
 </head>
 <body class="is-preload">
 
@@ -51,8 +63,38 @@
         </nav>
 
         <div id="main">
-            <!-- Featured Post - Project 1 and Project 2 -->
+            <!-- Featured Post - Customer Support Engine, E-Learning FAQ Bot, News Article Bot, and so on -->
             <div class="posts">
+                <!-- New Project - Customer Support Engine -->
+                <article class="post featured">
+                    <header class="major">
+                        <span class="date">30 December, 2024</span>
+                        <h2><a href="https://customer-support-eng.streamlit.app/" target="_blank">AI-Powered Customer Support Engine</a></h2>
+                        <p>An innovative AI-driven customer support engine that provides real-time assistance. The system includes two specialized AI agents: one handles frequently asked questions, while the other tracks order status and product details. It empowers users to effortlessly query about their orders, cancel requests, contact support, and more, offering a seamless pre- and post-purchase experience.</p>
+                    </header>
+                    <a href="https://customer-support-eng.streamlit.app/" class="image main">
+                        <img src="images/AI-Strategies-for-Customer-Service-Enhancing-Support.png" alt="AI-Powered Customer Support Engine" />
+                    </a>
+                    <ul class="actions special">
+                        <li><a href="https://customer-support-eng.streamlit.app/" class="button large" target="_blank">Try It</a></li>
+                        <li><a href="video_demo/Customer_support_livedemo.mp4" class="button large" target="_blank">Live Demo</a></li>
+                    </ul>
+                </article>
+                <article class="post featured">
+                    <header class="major">
+                        <span class="date">24 December, 2025</span>
+                        <h2><a href="https://stockaiagents.streamlit.app/" target="_blank">AI-Powered Financial Analysis Agent System</a></h2>
+                        <p>A groundbreaking AI solution that tackles financial market complexity through three collaborative agents. By combining real-time web research, market data analysis, and strategic coordination, the system transforms overwhelming financial information into clear, actionable insights. It eliminates hours of manual research, helping investors make faster, data-driven decisions by automatically synthesizing market trends and news impacts.</p>
+                    </header>
+                    <a href="https://stockaiagents.streamlit.app/" class="image main">
+                        <img src="images/Analysis Agent (63).webp" alt="AI-Powered Financial Analysis Agent System" />
+                    </a>
+                    <ul class="actions special">
+                        <li><a href="https://stockaiagents.streamlit.app/" class="button large" target="_blank">Try It</a></li>
+                        <li><a href="video_demo/financial_agent.mp4" class="button large" target="_blank">Live Demo</a></li>
+                    </ul>
+                </article>
+                <!-- Existing Project - E-Learning FAQ Bot -->
                 <article class="post featured">
                     <header class="major">
                         <span class="date">14 December, 2024</span>
@@ -64,8 +106,11 @@
                     </a>
                     <ul class="actions special">
                         <li><a href="https://edtechh.streamlit.app" class="button large" target="_blank">Try It</a></li>
+                        <li><a href="video_demo/e-learning faq.mp4" class="button large" target="_blank">Live Demo</a></li>
                     </ul>
                 </article>
+
+                <!-- Existing Project - News Article Research Bot -->
                 <article class="post featured">
                     <header class="major">
                         <span class="date">7 December, 2024</span>
@@ -79,6 +124,8 @@
                         <li><a href="https://news-reseacher-dcqtxkwdxbpwszy8wvbpty.streamlit.app/" class="button large" target="_blank">Try It</a></li>
                     </ul>
                 </article>
+
+                <!-- Existing Project - Medical Assistant Bot -->
                 <article class="post featured">
                     <header class="major">
                         <span class="date">12 November, 2024</span>
@@ -92,6 +139,8 @@
                         <li><a href="https://medicalll.streamlit.app/" class="button large" target="_blank">Try It</a></li>
                     </ul>
                 </article>
+
+                <!-- Existing Project - Document QnA Bot -->
                 <article class="post featured">
                     <header class="major">
                         <span class="date">21 October, 2024</span>
@@ -105,6 +154,8 @@
                         <li><a href="https://docu-lllm.streamlit.app" class="button large" target="_blank">Try It</a></li>
                     </ul>
                 </article>
+
+                <!-- Existing Project - YouTube Video Summarizer -->
                 <article class="post featured">
                     <header class="major">
                         <span class="date">7 September, 2024</span>
@@ -160,7 +211,7 @@
                         <p>Here, I built a Decision Tree Classifier model to predict Loan approval using a set of given variables. I used feature engineering and data processing on the data set.</p>
                     </header>
                     <a href="" class="image main">
-                        <img src="images/loan.jpg" alt="" />
+                        <img src="images/Loan status.jpg" alt="" />
                     </a>
                     <ul class="actions special">
                         <li><a href="https://github.com/Tejash97/projectss/blob/c69cfa8991274b3426bafdac914ae774e782c6af/Decision%20Tree%20Classifier.ipynb" class="button large" target="_blank">View Code</a></li>
@@ -174,7 +225,7 @@
                         <p>Here, I built a Logistic Regression model to predict Heart Disease using a set of given variables. A pipeline was used for efficient data preprocessing on the test dataset.</p>
                     </header>
                     <a href="https://github.com/Tejash97/projectss/blob/c69cfa8991274b3426bafdac914ae774e782c6af/Heart%20Disease%20Project.ipynb" class="image main">
-                        <img src="images/heart.jpg" alt="" />
+                        <img src="images/Heart diease.jpg" alt="" />
                     </a>
                     <ul class="actions special">
                         <li><a href="https://github.com/Tejash97/projectss/blob/c69cfa8991274b3426bafdac914ae774e782c6af/Heart%20Disease%20Project.ipynb" class="button large" target="_blank">View Code</a></li>
@@ -191,11 +242,15 @@
                     <li>Deep Learning</li>
                     <li>Statistics</li>
                     <li>Python</li>
+                    <li>LangChain</li>
+                    <li>Ai Agents</li>
+                    <li>Generative Ai</li>
 					<li>R Programming</li>
 					<li>Data Visualization</li>
 					<li>Power Bi</li>
                     <li>SQl</li>
 					<li>MS Excel</li>
+                    <li>RAG</li>
                     <!-- Add more skills as needed -->
                 </ul>
             </section>
@@ -213,12 +268,17 @@
             </section>
             <!-- Footer -->
             <footer id="footer">
-                <ul>
-                    <li>&copy; Untitled</li>
-                    <li>Design: <a href="" target="_blank"></a></li>
-                </ul>
+                <div class="footer-content">
+                    <ul class="social-links">
+                        <li><a href="https://www.linkedin.com/in/tejash-mishra/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/Tejash97" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="mailto:work.tejash@example.com"><i class="fas fa-envelope"></i> MAIL</a></li>
+                    </ul>
+                    <div class="footer-text">
+                        <p>Data Science Portfolio</p>
+                    </div>
+                </div>
             </footer>
-        </div>
 
         <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
